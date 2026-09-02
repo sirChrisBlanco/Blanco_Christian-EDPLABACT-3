@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="box">
+        <h2>MINI CHECKOUT SYSTEM</h2>
+
+    <label id="name">Customer Name</label>
+    <input type="text" id="customerName">
+<br> <br>
+
+    <label id="product">Number of Products</label>
+    <input type="number" id="productCount"> 
+
+    <div id="productsContainer"></div>
+    
+    <br> <br>
+        <label for="deliveryOption">Delivery Option</label>
+
+        <select name="" id="deliveryOption">
+            <option value="1">Store Pickup</option>
+            <option value="2">Standard Delivery</option>
+            <option value="3">Express Delivery</option>
+        </select> <br>
+
+        <p id="validationMessage"></p>
+
+    <button id="calculateBtn">Calculate Order</button>
+
+    <div id="orderSummary">Order Summary</div>
+    </div>
+
+</body>
+<style>
+        .box{
+            display: absolute;
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 30rem;
+            width: 35rem;
+            text-align: center;
+            margin-top: 2rem;
+
+        }
+        #calculateButton {
+                border: 5px solid lightblue;
+                border-radius: 10px;
+                height: 3rem;
+                width: 10rem;
+                background-color: lightblue;
+                margin-top: 5rem;
+            }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #orderSummary {
+            border: 2px solid black;
+            height: 6rem;
+            margin-top: 5rem;
+        }
+    </style>
+<script src="script.js"></script>
+</html>
